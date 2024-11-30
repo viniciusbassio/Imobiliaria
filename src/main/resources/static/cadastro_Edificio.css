@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-game.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ffcc00; /* Cor de foco */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7); /* Efeito de foco */
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #ff9933;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #444;
+}
+
+table th {
+    background-color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #444;
+}
+
+table tr:hover {
+    background-color: #555;
+}
+
+/* Ajustes para sidebar e info */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    background-color: #333;
+    border-right: 2px solid #444;
+}
+
+.sidebar button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+    border-color: #ff0;
+    box-shadow: 0px 0px 10px #ff0, 0px 0px 20px #ff0;
+    color: #ff0;
+}
+
+.info-display {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.info-display p {
+    font-size: 18px;
+    color: #0f0;
+}

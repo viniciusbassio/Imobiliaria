@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Gestão com Efeitos de Jogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Cadastrar Edifício</title>
+    <link rel="stylesheet" href="cadastro_Edificio.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastrar Edifício</h1>
+        <form id="formEdificio">
+            <div class="input-group">
+                <label for="nome">Nome do Edifício:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="custo">Custo de Construção:</label>
+                <input type="number" id="custo" name="custo" required>
+            </div>
+            <div class="input-group">
+                <label for="nivel">Nível do Edifício:</label>
+                <input type="number" id="nivel" name="nivel" required>
+            </div>
+            <button type="submit" class="btn-submit">Adicionar Edifício</button>
+        </form>
+        <h2>Edifícios Cadastrados</h2>
+        <table id="tabelaEdificios">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Custo</th>
+                    <th>Nível</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de edifícios serão inseridas aqui -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
