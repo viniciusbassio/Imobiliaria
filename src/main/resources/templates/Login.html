@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CssLogin.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <form action="/api/clientes" method="post">
+    <div class="form-group">
+        <label for="name"><b>Nome</b></label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+        <label for="phone"><b>Telefone</b></label>
+        <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+    </div>
+    <div class="form-group">
+        <label for="city"><b>Cidade</b></label>
+        <input type="text" id="city" name="city" placeholder="Digite sua cidade" required>
+    </div>
+    <div class="form-group">
+        <label><b>Sexo</b></label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="gender" value="masculino" required> Masculino
+            </label>
+            <label>
+                <input type="radio" name="gender" value="feminino" required> Feminino
+            </label>
+        </div>
+    </div>
+    <div class="buttons">
+        <button type="submit">Confirmar</button>
+        <button type="reset" class="cancel">Cancelar</button>
+    </div>
+</form>
+      
+</body>
+</html>

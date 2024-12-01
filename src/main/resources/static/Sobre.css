@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+#sobre {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+}
+
+
+#sobre h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+
+#sobre p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+#sobre p strong {
+    color: #0073e6;
+}
+nav {
+    justify-content: center;
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}

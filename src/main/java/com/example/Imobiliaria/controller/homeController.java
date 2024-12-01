@@ -1,23 +1,70 @@
 package com.example.Imobiliaria.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.Imobiliaria.repository.ClienteRepository;
+
 @RestController
 public class homeController {
 
+        @Autowired
+    private ClienteRepository clienteRepository;
+
     @GetMapping("/")
     public ModelAndView RotaPrincipal() {
-        ModelAndView mv = new ModelAndView("Menu.html");/* Quando for chamar a rota precisa do tipo do arquivo */
+        ModelAndView mv = new ModelAndView("Inicio.html");/* Quando for chamar a rota precisa do tipo do arquivo */
         return mv;
     }
 
-    @GetMapping("/Edificio")
+    @GetMapping("/Alugar")
+    public ModelAndView RotaAluguel() {
+        ModelAndView mv = new ModelAndView("Alugar.html");/* Quando for chamar a rota precisa do tipo do arquivo */
+        return mv;
+    }
+
+    @GetMapping("/Apartamento")
+    public ModelAndView RotaApartamento() {
+        ModelAndView mv = new ModelAndView("Apartamento.html");
+        return mv;
+    }
+
+    @GetMapping("/Casa")
     public ModelAndView listarEdificios() {
-        ModelAndView mv = new ModelAndView("Edificio.html");
+        ModelAndView mv = new ModelAndView("Casa.html");
+        return mv;
+    }
+
+    @GetMapping("/Kitnet")
+    public ModelAndView RotaKitnet() {
+        ModelAndView mv = new ModelAndView("Kitnet.html");/* Quando for chamar a rota precisa do tipo do arquivo */
+        return mv;
+    }
+
+    @GetMapping("/Inicio")
+    public ModelAndView Rotainicio(){
+        ModelAndView mv = new ModelAndView("Inicio.html");
+        return mv;
+    }
+
+    @GetMapping("/Sobre")
+    public ModelAndView RotaSobreNos(){
+        ModelAndView mv = new ModelAndView("Sobre.html");
+        return mv;
+    }
+    @GetMapping("/Comprar")
+    public ModelAndView Rota_Comprar(){
+        ModelAndView mv = new ModelAndView("Comprar.html");
+        return mv;
+    }
+
+    @GetMapping("/Login")
+    public ModelAndView Rota_Login(){
+        ModelAndView mv = new ModelAndView("Login.html");
         return mv;
     }
 
@@ -84,4 +131,6 @@ public class homeController {
         mv.addObject("telefone", telefone);
         return mv;
     }
+    
+
 }

@@ -2,7 +2,7 @@ package com.example.Imobiliaria.model;
 import jakarta.persistence.*;;
 
     @Entity 
-    @Table(name = "Cidades")
+    @Table(name = "cidades")
 
 public class Cidade {
     @Id

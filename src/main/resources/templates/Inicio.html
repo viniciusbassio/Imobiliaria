@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <header>
+        <h1> Bem-vindo á Dynasty 8!!</h1>
+    </header>
+        <nav>
+
+            <a href="/">Início</a>
+            <a href="/Casa">Casas</a>
+            <a href="/Apartamento">Apartamento</a>
+            <a href="/Kitnet">Kitnet</a>
+            <a href="/Alugar">Alugar</a>
+            <a href="/Sobre">Sobre Nós</a>
+        </nav>
+
+    <section class="search-section" id="busca">
+        <h2>Busca Rápida</h2>
+        <input type="text" id="Cidade" placeholder="Digite a cidade">
+        <select>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="quitinete">Kitnet
+        </select>
+        <select>
+            <option value="comprar">Comprar</option>
+            <option value="alugar">Alugar</option>
+        </select>
+        <input type="number" placeholder="Preço Mínimo">
+        <input type="number" placeholder="Preço Máximo">
+        <button style="border-radius: 100px; border: 1px solid #ccc;"> -se</button>
+    </section>
+
+    <section>
+        <h2 style="text-align: center;">Destaques do Momento</h2>
+        <div class="property-grid">
+            <div class="property-card">
+                <img src="https://www.gtabase.com/images/jch-optimize/ng/images_gta-5_properties_apartment_full_4401-procopio-drive.webp" alt="Casa">
+                <h3>Casa à Venda</h3>
+                <p>3 quartos - Bairro Residencial</p>
+                <p><strong>R$ 500.000</strong></p>
+                <button type="submit" onclick="showInfo('Casa')"><a href= "/Casa"> Ver Mais</button></a>
+            </div>
+            <div class="property-card">
+                <img src="https://img.gta5-mods.com/q75-w500-h333-cfill/images/hangover-apartment-1-0/10cc5a-20170605231339_1.jpg" hraf="/Apartamento" alt="Apartamento">
+                <h3>Apartamento para Alugar</h3>
+                <p>2 quartos - Condomínio com piscina</p>
+                <p><strong>R$ 2.000/mês</strong></p>
+                <button type="submit" onclick="showInfo('Apartamento')"><a href="/Apartamento"> Ver Mais</button></a>
+            </div>
+            <div class="property-card">
+                <img src="https://static.wikia.nocookie.net/gtawiki/images/4/4e/0232PaletoBoulevard-GTAV.png/revision/latest/smart/width/386/height/259?cb=20170520141629" href="/Kitnet" alt="Kitnet">
+                <h3>Kitnet Econômica</h3>
+                <p>1 quarto - Centro da cidade</p>
+                <p><strong>R$ 800/mês</strong></p>
+                <button type="submit" onclick="showInfo('Kitnet')"><a href= "/Kitnet"> Ver Mais</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Imóveis - Todos os direitos reservados.</p>
+        <p>Redes sociais: Facebook | Instagram | Twitter</p>
+    </footer>
+    </div>
+</body>
+</html>
